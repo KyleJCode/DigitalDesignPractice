@@ -1,0 +1,99 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001725a4faf70 .scope module, "ArbiterLSBtoMSB_tb" "ArbiterLSBtoMSB_tb" 2 4;
+ .timescale -9 -9;
+v000001725a553600_0 .net "gnt", 3 0, L_000001725a552520;  1 drivers
+v000001725a5527a0_0 .var "req", 3 0;
+v000001725a552700_0 .net "valid", 0 0, L_000001725a553100;  1 drivers
+S_000001725a4bd0b0 .scope module, "arb" "ArbiterLSBtoMSB" 2 10, 3 1 0, S_000001725a4faf70;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 4 "req";
+    .port_info 1 /OUTPUT 4 "gnt";
+    .port_info 2 /OUTPUT 1 "valid";
+L_000001725a4d3c10 .functor NOT 1, L_000001725a551bc0, C4<0>, C4<0>, C4<0>;
+L_000001725a4d3780 .functor AND 1, L_000001725a551e40, L_000001725a4d3c10, C4<1>, C4<1>;
+L_000001725a554440 .functor NOT 1, L_000001725a553060, C4<0>, C4<0>, C4<0>;
+L_000001725a5544b0 .functor AND 1, L_000001725a5534c0, L_000001725a554440, C4<1>, C4<1>;
+L_000001725a5543d0 .functor NOT 1, L_000001725a5532e0, C4<0>, C4<0>, C4<0>;
+L_000001725a554590 .functor AND 1, L_000001725a5544b0, L_000001725a5543d0, C4<1>, C4<1>;
+L_000001725a554520 .functor NOT 1, L_000001725a5523e0, C4<0>, C4<0>, C4<0>;
+L_000001725a5547c0 .functor AND 1, L_000001725a553740, L_000001725a554520, C4<1>, C4<1>;
+L_000001725a5546e0 .functor NOT 1, L_000001725a551940, C4<0>, C4<0>, C4<0>;
+L_000001725a554600 .functor AND 1, L_000001725a5547c0, L_000001725a5546e0, C4<1>, C4<1>;
+L_000001725a554130 .functor NOT 1, L_000001725a5525c0, C4<0>, C4<0>, C4<0>;
+L_000001725a554210 .functor AND 1, L_000001725a554600, L_000001725a554130, C4<1>, C4<1>;
+v000001725a4f9990_0 .net *"_ivl_10", 0 0, L_000001725a4d3c10;  1 drivers
+v000001725a4f97b0_0 .net *"_ivl_12", 0 0, L_000001725a4d3780;  1 drivers
+v000001725a4f9c10_0 .net *"_ivl_17", 0 0, L_000001725a5534c0;  1 drivers
+v000001725a4f9210_0 .net *"_ivl_19", 0 0, L_000001725a553060;  1 drivers
+v000001725a4f9a30_0 .net *"_ivl_20", 0 0, L_000001725a554440;  1 drivers
+v000001725a4f9350_0 .net *"_ivl_22", 0 0, L_000001725a5544b0;  1 drivers
+v000001725a4f8ef0_0 .net *"_ivl_25", 0 0, L_000001725a5532e0;  1 drivers
+v000001725a4f9710_0 .net *"_ivl_26", 0 0, L_000001725a5543d0;  1 drivers
+v000001725a4f9490_0 .net *"_ivl_28", 0 0, L_000001725a554590;  1 drivers
+v000001725a4f9ad0_0 .net *"_ivl_3", 0 0, L_000001725a5522a0;  1 drivers
+v000001725a4f8f90_0 .net *"_ivl_34", 0 0, L_000001725a553740;  1 drivers
+v000001725a4f9b70_0 .net *"_ivl_36", 0 0, L_000001725a5523e0;  1 drivers
+v000001725a4f9850_0 .net *"_ivl_37", 0 0, L_000001725a554520;  1 drivers
+v000001725a4f98f0_0 .net *"_ivl_39", 0 0, L_000001725a5547c0;  1 drivers
+v000001725a4f9530_0 .net *"_ivl_42", 0 0, L_000001725a551940;  1 drivers
+v000001725a4f8db0_0 .net *"_ivl_43", 0 0, L_000001725a5546e0;  1 drivers
+v000001725a4f95d0_0 .net *"_ivl_45", 0 0, L_000001725a554600;  1 drivers
+v000001725a4f9170_0 .net *"_ivl_48", 0 0, L_000001725a5525c0;  1 drivers
+v000001725a4f9030_0 .net *"_ivl_49", 0 0, L_000001725a554130;  1 drivers
+v000001725a4f90d0_0 .net *"_ivl_51", 0 0, L_000001725a554210;  1 drivers
+v000001725a552200_0 .net *"_ivl_7", 0 0, L_000001725a551e40;  1 drivers
+v000001725a551ee0_0 .net *"_ivl_9", 0 0, L_000001725a551bc0;  1 drivers
+v000001725a552fc0_0 .net "gnt", 3 0, L_000001725a552520;  alias, 1 drivers
+v000001725a551a80_0 .net "req", 3 0, v000001725a5527a0_0;  1 drivers
+v000001725a551b20_0 .net "valid", 0 0, L_000001725a553100;  alias, 1 drivers
+L_000001725a5522a0 .part v000001725a5527a0_0, 0, 1;
+L_000001725a551e40 .part v000001725a5527a0_0, 1, 1;
+L_000001725a551bc0 .part v000001725a5527a0_0, 0, 1;
+L_000001725a5534c0 .part v000001725a5527a0_0, 2, 1;
+L_000001725a553060 .part v000001725a5527a0_0, 1, 1;
+L_000001725a5532e0 .part v000001725a5527a0_0, 0, 1;
+L_000001725a552520 .concat8 [ 1 1 1 1], L_000001725a5522a0, L_000001725a4d3780, L_000001725a554590, L_000001725a554210;
+L_000001725a553740 .part v000001725a5527a0_0, 3, 1;
+L_000001725a5523e0 .part v000001725a5527a0_0, 2, 1;
+L_000001725a551940 .part v000001725a5527a0_0, 1, 1;
+L_000001725a5525c0 .part v000001725a5527a0_0, 0, 1;
+L_000001725a553100 .reduce/or L_000001725a552520;
+    .scope S_000001725a4faf70;
+T_0 ;
+    %vpi_call 2 14 "$dumpfile", "ArbiterLSBtoMSB_tb.vcd" {0 0 0};
+    %vpi_call 2 15 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001725a4faf70 {0 0 0};
+    %pushi/vec4 8, 0, 4;
+    %store/vec4 v000001725a5527a0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 14, 0, 4;
+    %store/vec4 v000001725a5527a0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 3, 0, 4;
+    %store/vec4 v000001725a5527a0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 4;
+    %store/vec4 v000001725a5527a0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v000001725a5527a0_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 4;
+    %store/vec4 v000001725a5527a0_0, 0, 4;
+    %delay 10, 0;
+    %vpi_call 2 33 "$display", "Test Complete" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "ArbiterLSBtoMSB_tb.v";
+    "./ArbiterLSBtoMSB.v";
