@@ -1,0 +1,205 @@
+$date
+	Sat Nov 15 01:18:17 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module RoundRobinArbiter_tb $end
+$var wire 2 ! state [1:0] $end
+$var wire 3 " gnt [2:0] $end
+$var parameter 32 # CLK_PERIOD $end
+$var reg 1 $ clk $end
+$var reg 3 % req [2:0] $end
+$scope module dut $end
+$var wire 1 $ clk $end
+$var wire 3 & req [2:0] $end
+$var reg 3 ' gnt [2:0] $end
+$var reg 2 ( state [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10100 #
+$end
+#0
+$dumpvars
+b0 (
+b0 '
+b0 &
+b0 %
+0$
+b0 "
+b0 !
+$end
+#10
+b1 !
+b1 (
+1$
+#20
+0$
+#30
+b10 !
+b10 (
+b100 "
+b100 '
+b111 %
+b111 &
+1$
+#40
+0$
+#50
+b1 "
+b1 '
+b0 !
+b0 (
+1$
+#60
+0$
+#70
+b10 "
+b10 '
+b1 !
+b1 (
+1$
+#80
+0$
+#90
+b100 "
+b100 '
+b10 !
+b10 (
+1$
+#100
+0$
+#110
+b1 "
+b1 '
+b0 !
+b0 (
+1$
+#120
+0$
+#130
+b10 "
+b10 '
+b1 !
+b1 (
+1$
+#140
+0$
+#150
+b10 !
+b10 (
+b100 "
+b100 '
+b101 %
+b101 &
+1$
+#160
+0$
+#170
+b1 "
+b1 '
+b0 !
+b0 (
+1$
+#180
+0$
+#190
+b100 "
+b100 '
+b1 !
+b1 (
+1$
+#200
+0$
+#210
+b100 "
+b100 '
+b10 !
+b10 (
+1$
+#220
+0$
+#230
+b1 "
+b1 '
+b0 !
+b0 (
+1$
+#240
+0$
+#250
+b100 "
+b100 '
+b1 !
+b1 (
+1$
+#260
+0$
+#270
+b10 !
+b10 (
+b0 "
+b0 '
+b0 %
+b0 &
+1$
+#280
+0$
+#290
+b0 !
+b0 (
+1$
+#300
+0$
+#310
+b1 !
+b1 (
+1$
+#320
+0$
+#330
+b10 !
+b10 (
+b10 "
+b10 '
+b10 %
+b10 &
+1$
+#340
+0$
+#350
+b10 "
+b10 '
+b0 !
+b0 (
+1$
+#360
+0$
+#370
+b10 "
+b10 '
+b1 !
+b1 (
+1$
+#380
+0$
+#390
+b10 "
+b10 '
+b10 !
+b10 (
+1$
+#400
+0$
+#410
+b10 "
+b10 '
+b0 !
+b0 (
+1$
