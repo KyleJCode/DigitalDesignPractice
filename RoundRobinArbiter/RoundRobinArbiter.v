@@ -18,8 +18,7 @@ always @(posedge clk) begin
 end
 
 
-always @(*)
-    begin
+always @(*) begin
         gnt = 3'b000;
         if(state == 2'b00)
         begin
