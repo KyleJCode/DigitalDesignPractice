@@ -1,9 +1,11 @@
-module SynchronousArbiterMSBtoLSB(clk, req, gnt);
+module MSBtoLSBArbiter(clk, req, gnt);
 
 input clk;
 input [2:0] req;
 output reg [2:0] gnt;
-output reg valid;
+output valid;
+
+assign valid = |gnt;
 
 always @(posedge clk)
 begin 
