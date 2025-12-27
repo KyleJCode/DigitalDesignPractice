@@ -63,7 +63,7 @@ begin
             if(state == 2'b00)
                 gnt <= 3'b001;
             else if(state == 2'b01)
-                gnt <= 3'b010
+                gnt <= 3'b010;
             else
                 gnt <= 3'b100;
         end
